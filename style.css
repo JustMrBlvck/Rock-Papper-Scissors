@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.mainContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBoard{
+    position: fixed;
+    top: 40px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+.score{
+    border: 2px solid black;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    font-size: 22px;
+    gap: 5%;
+}
+
+#reStart-button{
+   background-color: white;
+   position: fixed;
+   top: 100px;
+   font-size: 1.5rem;
+   border: none;
+   cursor: pointer;
+}
+
+#playerDisplay{
+    width: 120px;
+    height: 120px;
+    margin-top: 90px;
+}
+
+#computerDisplay{
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+#choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.Game-Clicker{
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.greenText, #playerScoreDisplay{
+    color: hsl(130, 84%, 54%);
+}
+.redText, #computerScoreDisplay{
+    color: hsl(0, 84%, 60%) ;
+}
+.blackText, #drawScoreDisplay{
+    color: black;
+}
+
+/* SETTINGS.HTML STYLING */
+.instruction{
+    position: fixed;
+    bottom: 100px;
+    right: 190px;
+    width: 30px;
+    font-size: 25px;
+    height: 30px;
+}
+
+.gameGuild{
+    padding: 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+P{  
+    width: 600px; 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+@media screen and (max-width: 390px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .mainContainer{
+       height: 844px;
+       overflow-y: hidden;
+       overflow-x: hidden;   
+    }
+
+    .scoreBoard{
+        position: fixed;
+        top: 40px;
+        width: 98%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .score{
+        width: 90%;
+        font-size: 26px;
+        margin-bottom: 2px;
+        gap: 5%;
+    }
+
+    #reStart-button{
+        top: 115px;
+    }
+
+    #playerDisplay{
+        width: 150px;
+        height: 150px;
+        margin-bottom: -80px;
+    }
+
+    #resultDisplay{
+        transform: translateY(120px);
+        font-weight: bold;
+    }
+
+    #computerDisplay{ 
+        width: 150px;
+        height: 150px;
+        margin-top: 150px;
+    }
+
+    #choices{
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        margin-top: 80px;
+        gap: 60px;
+    }
+
+    .instruction{
+        position: fixed;
+        bottom: 25px;
+        right: 30px;
+        width: 30px;
+        font-size: 30px;
+        height: 30px;
+        color: black;
+    }
+
+
+    .gameGuild{
+        text-align: justify;
+        text-wrap: wrap;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+    p{
+        width: 340px;
+      }
+    
+      table{
+        width: 350px;
+      }
+}
+      
+        /* IPAD RESPONSIVE */
+
+@media  screen and (min-width: 391px) and (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+        font-weight: bold;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .mainContainer{
+        height: 1024px;
+        overflow-y: hidden;
+        overflow-x: hidden;   
+     }
+
+     .scoreBoard{
+        position: fixed;
+        top: 40px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .score{
+        width: 90%;
+        font-size: 37px;
+        margin-bottom: 2px;
+        gap: 8%;
+    }
+    
+    #reStart-button{
+        top: 150px;
+    }
+
+    #playerDisplay{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 200px;
+    }
+
+    #resultDisplay{
+        transform: translateY(-160px);
+        font-weight: bold;
+    }
+
+    #computerDisplay{ 
+        width: 150px;
+        height: 150px;
+        margin-top: -100px;
+    }
+
+    #choices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        margin-top: 80px;
+        gap: 100px;
+    }
+
+    .gameInstructiom{
+        height: 1024px;
+        overflow-y: hidden;
+        overflow-x: hidden; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instruction{
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        bottom: 200px;
+        right: 10px;
+        font-size: 40px;
+        color: black;
+    }
+
+    .gameGuild{
+        text-align: justify;
+        text-wrap: wrap;
+        font-size: 20px;
+        line-height: 1.6;
+     }
+    
+      table{
+        width: 600px;
+        margin-top: 20px;
+      }
+   
+}
+
+

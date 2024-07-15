@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Papper & Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="white">
+     <div class="mainContainer">
+          <div class="scoreBoard">
+               <div class="score">
+                <h6 > Win:
+                    <span id="playerScoreDisplay">0</span> 
+                </h6>
+                               ||
+                <h6 > Draw:
+                    <span id="drawScoreDisplay">0</span> 
+                </h6>
+                               ||
+                <h6 > Lose:
+                    <span id="computerScoreDisplay">0</span> 
+                </h6>
+               </div>
+          </div>
+
+          <button onclick="resetGame()" id="reStart-button"><i class="fa-solid fa-rotate-right"></i></button>
+     
+          <img id="playerDisplay">
+          <h3 id="resultDisplay"></h3>
+          <img id="computerDisplay">
+
+        <div id="choices">
+            <button class="Game-Clicker" onclick="PlayGame('rock')"><img src="rock-icon.png" style="height: 55px; width: 50px; border: none;"></button>
+            <button class="Game-Clicker" onclick="PlayGame('papper')"><img src="papper-icon.png" style="height: 50px; width: 50px;"></button>
+            <button class="Game-Clicker" onclick="PlayGame('scissors')"><img src="scissor-icon.jpeg" style="height: 50px; width: 50px;"></button>
+        </div>
+
+    <div class="instruction">
+        <a href="gameGuild.html"><i class="fa-solid fa-gear"></i></a>
+     </div>
+
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
