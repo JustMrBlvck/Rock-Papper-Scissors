@@ -115,8 +115,8 @@ P{
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        overflow-y: auto;
-        overflow-x: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .mainContainer{
@@ -207,8 +207,8 @@ P{
         box-sizing: border-box;
         font-family: cursive;
         font-weight: bold;
-        overflow-y: auto;
-        overflow-x: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .mainContainer{
