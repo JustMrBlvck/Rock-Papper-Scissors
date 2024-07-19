@@ -121,8 +121,8 @@ P{
 
     .mainContainer{
        height: 844px;
-       overflow-y: auto;
-       overflow-x: auto;   
+       overflow-y: hidden;
+       overflow-x: hidden;   
     }
 
     .scoreBoard{
@@ -213,8 +213,8 @@ P{
 
     .mainContainer{
         height: 1024px;
-        overflow-y: auto;
-        overflow-x: auto;   
+        overflow-y: hidden;
+        overflow-x: hidden;   
      }
 
      .scoreBoard{
